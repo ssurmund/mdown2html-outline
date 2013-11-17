@@ -56,7 +56,7 @@ def create_outline(dir_root, html_style_file):
 
 	# set markdown and html files for outline
 	mdfile = os.path.join(dir_root, "outline.mdown")
-	htmlfile = os.path.join(dir_root, "outline.mdown.html")
+	htmlfile = os.path.join(dir_root, "outline.html")
 
 	# remove outline html file, so it is not part of the outline
 	try:

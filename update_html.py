@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*- 
 
+import os
 import codecs
 
 from mdown2html import mdown2html 
@@ -20,6 +21,6 @@ def update_html(root_dir, html_style_file):
 			mdown = inputfile.read()
 			html = mdown2html(mdown, style)
 		# write new html code to file
-		htmlfile = mdfile + ".html"
+		htmlfile = os.path.join(os.path.dirname(mdfile), os.path.splitext(os.path.basename(mdfile))[0] + ".html")
 		with codecs.open(htmlfile, mode='w', encoding="utf-8") as outputfile:
 			outputfile.write(html)
