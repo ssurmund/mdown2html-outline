@@ -9,7 +9,7 @@ from find_all_files import find_all_files
 
 def update_html(root_dir, html_style_file):
 	# get list of all markdown files in directory tree
-	source_files = find_all_files(root_dir, ['*.mdown', '*.markdown'])
+	source_files = find_all_files(root_dir, ['*.mdown', '*.markdown', '*.md'])
 
 	# read style for creating the html files
 	with codecs.open(html_style_file, mode='r', encoding="utf-8") as stylefile:
