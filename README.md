@@ -1,6 +1,12 @@
 mdown2html-outline
 ==================
 
-Simple Python tool to convert all markdown files in a directory tree into html files and create a nice outline for these files.
+*mdown2html-outline* is a simple Python tool to convert all markdown files in a directory tree into html files. Furthermore it creates a nice outline for these files.
 
-**usage:** `python mdown2html_outline.py <path>`
+**requirements:** 
+The tool is developed on Ubuntu linux using Python2.7. It was not tested with Python3 so far, so there might be be some small adaptions necessary when using a new version of Python.  
+
+**usage:** 
+`python mdown2html_outline.py <rood-directory>`
+
+As a result there is a new html file created next to each markdown file in the directory tree. Supported markdown file extensions are *.markdown*, *.mdown* and *.md*. Additionally an outline is created in the root directory containing links to each new html file.
